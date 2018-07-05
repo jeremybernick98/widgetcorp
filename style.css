@@ -1,0 +1,386 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+}
+
+.mainscene {
+  background: url("stars.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.mainscene1 {
+  height: 85vh;
+  width: 100%;
+}
+
+.eng {
+  background: #1c1c20;
+}
+
+.eng-dash {
+  background: #131313;
+}
+
+.prod {
+  background: #edeced;
+}
+
+.admin {
+  background: #e9ecee;
+}
+
+.prod .contacts.page {
+  background: #edeced;
+}
+.prod .mainscene1 {
+  height: auto;
+  background: #edeced;
+}
+.admin .mainscene1 {
+  height: auto;
+  background: #e9ecee;
+}
+.prod .nav,
+.admin .nav {
+  height: 80px;
+}
+.prod .nav img,
+.admin .nav img {
+  height: 80px;
+  width: auto;
+}
+
+.eng .nav {
+  height: 40px;
+  background: #000;
+  justify-content: flex-start;
+  color: #d3d3d3;
+  font-size: 27px;
+}
+
+.eng .nav .text {
+  padding-left: 20px;
+}
+
+.eng .content-image {
+  padding: 27px;
+}
+
+.eng .nav img {
+  height: 40px;
+  width: auto;
+}
+
+.mainscene1 img {
+  width: 100%;
+}
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 10px;
+  padding-top: 25px;
+}
+
+.nav object {
+  height: 45px;
+  transition: 300ms ease-in-out;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-basis: 300px;
+  justify-content: space-around;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu > a {
+  margin: auto;
+  padding: 0 20px;
+  transition: 300ms ease-in-out;
+}
+.menu > a:hover {
+  font-size: 17px;
+  color: #ffc145;
+  cursor: pointer;
+}
+
+.menu > a:active {
+  color: #ff6b6c;
+  cursor: pointer;
+}
+.menu > a:hover object {
+  height: 55px;
+  fill: #ffc145;
+}
+
+.menu .nav-image {
+  display: flex;
+  justify-content: center;
+}
+
+.banner {
+  font-family: "Alegreya", serif;
+}
+
+.banner .main {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+  animation-delay: 0.5s;
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 240px auto 0;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  font-size: 67px;
+  color: #fff;
+}
+
+.banner .main2 {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+  animation-delay: 6s;
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 20px auto;
+
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: #fff;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 11em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.plans {
+  height: 100vh;
+  background: #fefdea;
+  min-height: 1050px;
+}
+
+.contacts {
+  height: 100vh;
+  background: #e3e3e3;
+  min-height: 900px;
+  position: relative;
+}
+
+.contacts.page {
+  height: 160px;
+  min-height: 160px;
+  background: #1c1c20;
+}
+.contacts header {
+  background: #5b5f97;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+.contacts footer {
+  display: flex;
+  flex-direction: column;
+  color: #707070;
+  padding: 20px 40px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.eng .contacts footer {
+  color: #b0b0b0;
+}
+
+.admin .contacts.page {
+  background: #e9ecee;
+}
+
+.eng-dash .contacts.page {
+  background: #131313;
+}
+
+.contacts footer .contents {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0;
+  justify-content: space-between;
+}
+
+.contacts footer .links {
+  display: flex;
+}
+
+.contacts footer .links a {
+  color: #df8384;
+  text-decoration: none;
+}
+
+.contacts .content {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.contacts .address {
+  padding: 40px;
+  font-size: 20px;
+  color: #5b5f97;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contacts img {
+  height: 60px;
+}
+
+.contacts .address h2 {
+  margin-bottom: 10px;
+}
+
+.contacts .content .map {
+  padding: 38px;
+  border-right: 1px solid #5f84f261;
+}
+
+.contacts footer .links a:first-child {
+  padding-right: 40px;
+  border-right: 1px solid #ffc145;
+}
+
+.contacts footer .links a:nth-child(2) {
+  padding-left: 40px;
+}
+
+.plan-banner {
+  background: #ffc145;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+.plan-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5rem;
+  align-items: flex-start;
+}
+
+.plan-item {
+  flex-basis: 20%;
+  max-width: 20%;
+  margin: 20px;
+  padding: 0;
+  background: #fffffb;
+  border: 1px solid #ddd;
+  box-shadow: 4px 4px 3px 0px rgba(245, 248, 206, 0.45098039215686275);
+}
+
+.plan-item > div {
+  padding: 17px;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.plan-header {
+  height: 5px;
+  padding: 0 !important;
+  background: #5b5f97;
+}
+
+.plan-item .name {
+  font-size: 25px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.plan-item .name.ent {
+  padding-bottom: 38px;
+}
+
+.plan-item .plan-name {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d5d5d5;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.plan-item .price-annually {
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 30px;
+  color: #686868;
+}
+
+.plan-item .price {
+  font-size: 35px;
+  text-align: center;
+  margin: 0 20%;
+  border-bottom: 1px solid #c3c3c3;
+}
+
+.plan-item .price.ent {
+  font-size: 18px;
+}
+
+.plan-item .price span {
+  font-size: 25px;
+  text-align: center;
+  vertical-align: super;
+}
+
+.plan-item .buy-button {
+  margin: auto;
+  display: inline-block;
+  background: #ff6b6c;
+  color: #f6f6f6;
+  padding: 11px 45px;
+}
+
+.plan-item .buy-button.ent {
+  background: #ffc145;
+  color: #000;
+}
